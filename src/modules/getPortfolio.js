@@ -6,10 +6,11 @@ const getPortfolioItems = () => {
 const portfolioItems = ref([
         {
           id: 1,
-          title: 'Portfolio Item 1',
-          description: 'This is the first portfolio item',
+          title: 'Project 1 - First Semester Project',
+          description: 'This is the 1 Project item',
           image: image1,
-          category: 'Web'
+          category: 'Web',
+          stack: "HTML CSS JavaScript Bootstrap"
       
         },
         {

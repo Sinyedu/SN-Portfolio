@@ -11,10 +11,12 @@
         <router-link :to="`/portfoliodetail/${portfolioItem.id}`"> 
           <p class="text-white">Go to project!</p>
         </router-link>
+        <p class="text-white">{{ portfolioItem.id }}</p>
         <h2 class="text-white">{{ portfolioItem.title }}</h2>
         <p class="text-white">{{ portfolioItem.description }}</p>
-        <p class="text-white">{{ portfolioItem.id }}</p>
+        <p :class="portfolioItem.stack">{{ portfolioItem.stack }}</p>
         <p :class="portfolioItem.category">{{ portfolioItem.category }}</p>
+
   
         <img :src="portfolioItem.image" alt="">
         <div v-if="portfolioItem.link">
@@ -57,11 +59,14 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
 
+  .HTML {
+    color: white;
+  }
   .filter-buttons {
     margin-bottom: 20px;
   }
-  
-  .Web {
+
+  .Web{
     color: white;
     text-decoration: underline;
   }
