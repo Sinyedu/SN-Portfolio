@@ -1,14 +1,15 @@
 <template>
     <main>
-      <h1 class="text-3xl font-bold underline">
-      </h1>
-      <button @click="selectedCategory = 'web'">Web</button>
-      <button @click="selectedCategory = 'photo'">Photo</button>
-      <button @click="selectedCategory = ''">All</button>
-  
       <div v-for="portfolioItem in filteredPortfolioItems" :key="portfolioItem" class="card">
+        <div class="filter-buttons mb-4">
+          <h1 class="text-1xl font-bold underline">
+            <button @click="selectedCategory = 'Web'" class="text-white p-2">Web</button>
+            <button @click="selectedCategory = 'Photo'" class="text-white p-2">Photo</button>
+            <button @click="selectedCategory = ''" class="text-white p-2">All</button>
+          </h1>
+        </div>
         <router-link :to="`/portfoliodetail/${portfolioItem.id}`"> 
-          <p class="text-white">Go to project!  </p>
+          <p class="text-white">Go to project!</p>
         </router-link>
         <h2 class="text-white">{{ portfolioItem.title }}</h2>
         <p class="text-white">{{ portfolioItem.description }}</p>
@@ -46,12 +47,18 @@
   
   <style lang="scss">
   .card {
+    display: flex;
+    flex-direction: column;
     color:#333;
     background-color: #1c1c1c;
     padding: 1rem;
     margin: 1rem;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .filter-buttons {
+    margin-bottom: 20px;
   }
   
   .Web {
@@ -61,5 +68,9 @@
   .Photo {
     color: white;
     text-decoration: underline;
+  }
+
+  .selectedCategory {
+    z-index: 1;
   }
   </style>
