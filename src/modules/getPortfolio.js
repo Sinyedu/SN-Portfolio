@@ -9,7 +9,7 @@ const portfolioItems = ref([
           title: 'Portfolio Item 1',
           description: 'This is the first portfolio item',
           image: image1,
-          category: 'web'
+          category: 'Web'
       
         },
         {
@@ -18,21 +18,21 @@ const portfolioItems = ref([
           description: 'This is the second portfolio item',
           image: 'https://via.placeholder.com/150',
           link: 'https://www.google.com',
-          category: 'photo'
+          category: 'Photo'
         },
         {
           id: 3,
           title: 'Portfolio Item 3',
           description: 'This is the third portfolio item',
           image: 'https://via.placeholder.com/150',
-          category: 'web'
+          category: 'Web'
         },
         {
           id: 4,
           title: 'Portfolio Item 4',
           description: 'This is the second portfolio item',
           image: 'https://via.placeholder.com/150',
-          category: 'photo'
+          category: 'Photo'
         }  
       ])
 

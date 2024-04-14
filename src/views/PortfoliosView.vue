@@ -8,11 +8,11 @@
   
       <div v-for="portfolioItem in filteredPortfolioItems" :key="portfolioItem" class="card">
         <router-link :to="`/portfoliodetail/${portfolioItem.id}`"> 
-          Go to project!  
+          <p class="text-white">Go to project!  </p>
         </router-link>
-        <h2>{{ portfolioItem.title }}</h2>
-        <p>{{ portfolioItem.description }}</p>
-        <p>{{ portfolioItem.id }}</p>
+        <h2 class="text-white">{{ portfolioItem.title }}</h2>
+        <p class="text-white">{{ portfolioItem.description }}</p>
+        <p class="text-white">{{ portfolioItem.id }}</p>
         <p :class="portfolioItem.category">{{ portfolioItem.category }}</p>
   
         <img :src="portfolioItem.image" alt="">
@@ -47,17 +47,19 @@
   <style lang="scss">
   .card {
     color:#333;
-    background-color: #f4f4f4;
+    background-color: #1c1c1c;
     padding: 1rem;
     margin: 1rem;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
-  .web {
-    background-color: #af7012;
+  .Web {
+    color: white;
+    text-decoration: underline;
   }
-  .photo {
-    background-color: #f256e2;
+  .Photo {
+    color: white;
+    text-decoration: underline;
   }
   </style>

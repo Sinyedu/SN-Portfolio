@@ -4,11 +4,13 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
 <header>
-    <div class="navbar-wrapper">
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-        <RouterLink to="/portfolio">Projects</RouterLink>
+  <div class="navbar-wrapper fixed top-0 w-full bg-gray-800 text-white flex justify-between items-center px-4 py-3 pb-2">
+    <div class="flex items-center">
+      <RouterLink to="/" class="mr-4">Home</RouterLink>
+      <RouterLink to="/about" class="mr-4">About</RouterLink>
+      <RouterLink to="/portfolio">Projects</RouterLink>
     </div>
+  </div>
 </header>
 <Transition mode="out-in" name="slide-fade">
   <RouterView/>
@@ -18,14 +20,6 @@ import { RouterLink, RouterView } from 'vue-router'
 h
 <style scoped>
 
-
-.navbar-wrapper {
-  position: inherit;
-  width: 25vh;
-  display: flex;
-  justify-content: space-around;
-  padding: 1rem;
-}
 .fade-enter-active, .fade-leave-active {
   transition: opacity 0.75s ease;
 }
