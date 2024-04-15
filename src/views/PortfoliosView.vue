@@ -3,6 +3,7 @@
       <div v-for="portfolioItem in filteredPortfolioItems" :key="portfolioItem" class="card">
         <div class="filter-buttons mb-4">
           <h1 class="text-1xl font-bold underline">
+            <button @click="selectedCategory = 'Video'" class="text-white p-2">Video</button>
             <button @click="selectedCategory = 'Web'" class="text-white p-2">Web</button>
             <button @click="selectedCategory = 'Photo'" class="text-white p-2">Photo</button>
             <button @click="selectedCategory = ''" class="text-white p-2">All</button>
@@ -33,7 +34,6 @@
     
     </main>
   </template>
-  
   <script setup>
   import { ref, computed } from 'vue'
   const { portfolioItems } = getPortfolio()

@@ -52,6 +52,14 @@ const portfolioItems = ref([
           image: image2,  
           link: 'Press here for the viewing of the Project!',
           category: 'Photo'
+        },
+        {
+          id: 7,
+          title: 'Commericial for coffee',
+          description: 'A short commericial that we made for some brand of coffee!',
+          image: image2,  
+          link: 'https://www.youtube.com/watch?v=g4h9EjR9wW8',
+          category: 'Video'
         }
       ])
 
