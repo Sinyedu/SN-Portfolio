@@ -5,7 +5,7 @@ import { RouterLink, RouterView } from 'vue-router'
 <template>
 <header>
 <nav>
-  <div class="navbar-wrapper fixed top-0 w-full text-white flex justify-between items-center px-4 py-3 pb-2">
+  <div class="navbar-wrapper fixed top-0 w-full text-white flex justify-between items-center px-4 py-3 pb-5">
   <div class="flex items-center">
   </div>
   <div class="flex items-center">

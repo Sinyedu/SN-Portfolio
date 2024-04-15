@@ -25,4 +25,11 @@
   .h-96 {
     height: 37rem;
   }
+
+  .herotext {
+    color: white;
+    left: 10vh;
+    top: 30vh;
+    position: absolute;
+  }
 </style>

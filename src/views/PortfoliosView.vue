@@ -57,7 +57,6 @@
   }
 
 
-
   .card {
     width: 100vh;
     height: auto;
@@ -73,8 +72,7 @@
   .card img {
     display: flex;
     width: 55%;
-    height: auto;
-    margin-top: 1rem;
+    height: 55%;
   }
   .HTML {
     color: white;
