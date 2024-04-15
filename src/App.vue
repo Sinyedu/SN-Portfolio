@@ -4,15 +4,17 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
 <header>
+<nav>
   <div class="navbar-wrapper fixed top-0 w-full text-white flex justify-between items-center px-4 py-3 pb-2">
   <div class="flex items-center">
   </div>
   <div class="flex items-center">
     <RouterLink to="/" class="mr-4">Home</RouterLink>
     <RouterLink to="/about" class="mr-4">About</RouterLink>
-    <RouterLink to="/portfolio">Projects</RouterLink>
+    <RouterLink to="/portfolio" class="mr-4">Projects</RouterLink>
   </div>
-</div>
+  </div>
+</nav>
 </header>
 <Transition mode="out-in" name="slide-fade">
   <RouterView/>
@@ -61,6 +63,9 @@ nav a {
 nav a:first-of-type {
   border: 0;
 }
+
+
+
 /* 
 @media (min-width: 1024px) {
   header {

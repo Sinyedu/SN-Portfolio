@@ -1,6 +1,8 @@
 import { ref } from 'vue'
 
 import image1 from '@/assets/Trapholt.png'
+import image2 from '@/assets/plakat.png'
+import image3 from '@/assets/XDDesign1.png'
 
 const getPortfolioItems = () => {
 const portfolioItems = ref([
@@ -9,7 +11,7 @@ const portfolioItems = ref([
           title: 'Trapholt Museum',
           description: 'The first proper webpage that we built for our First Semester project!',
           image: image1,
-          link: "Press here for the project!",
+          link: 'https://museum-trapholt.dk',
           category: 'Web'
       
         },
@@ -18,7 +20,7 @@ const portfolioItems = ref([
           title: 'Dice Game',
           description: 'This is a small dice game that I built to understand the basics of JavaScript',
           image: 'https://via.placeholder.com/150',
-          link: 'Press here for the Github link!',
+          link: '',
           category: 'Web'
         },
         {
@@ -39,8 +41,17 @@ const portfolioItems = ref([
           id: 5,
           title: 'XD App Design',
           description: 'This is a design that we made in Adobe XD for a project in our first semester, that was made for Job searching!',
-          image: 'https://via.placeholder.com/150',
+          image: image3,
+          link: 'https://xd.adobe.com/view/0e6742e1-b015-4dbb-b6f1-2a387be780c0-5b34/?fullscreen',
           category: 'Web'
+        },
+        {
+          id: 6,
+          title: 'Poster for Sustainability',
+          description: 'A poster for Sustainability that was in tandem with our Sustainability week!',
+          image: image2,  
+          link: 'Press here for the viewing of the Project!',
+          category: 'Photo'
         }
       ])
 

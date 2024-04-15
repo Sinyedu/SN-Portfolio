@@ -12,20 +12,19 @@
         <div class="portfolio-item flex items-center">
           <div class="info mr-4">
         <router-link :to="`/portfoliodetail/${portfolioItem.id}`"> 
-          <p class="text-white">Go to project!</p>
+          <p class="text-white">Click here for more details!</p>
         </router-link>
          
         <h2 class="text-white">{{ portfolioItem.title }}</h2>
         <p class="text-white">{{ portfolioItem.description }}</p>
-        <a href="https://museum-trapholt.dk/" class="text-white">{{ portfolioItem.link }}</a>
         <p :class="portfolioItem.stack">{{ portfolioItem.stack }}</p>
         <p :class="portfolioItem.category">{{ portfolioItem.category }}</p>
         </div>
         
         <img :src="portfolioItem.image" alt="">
       </div>
-        <div v-if="portfolioItem.link">
-          <a :href="portfolioItem.link">Link</a>
+        <div class="projectlink" v-if="portfolioItem.link">
+          <a :href="portfolioItem.link">Link for the project!</a>
         </div>
         <div v-else>
   
@@ -53,6 +52,12 @@
   </script>
   
   <style lang="scss">
+  .projectlink {
+    color: white;
+  }
+
+
+
   .card {
     width: 100vh;
     height: auto;
