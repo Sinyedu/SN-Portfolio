@@ -3,6 +3,7 @@ import { ref } from 'vue'
 import image1 from '@/assets/Trapholt.png'
 import image2 from '@/assets/plakat.png'
 import image3 from '@/assets/XDDesign1.png'
+import image4 from '@/assets/Reklame1.png'
 
 const getPortfolioItems = () => {
 const portfolioItems = ref([
@@ -57,7 +58,7 @@ const portfolioItems = ref([
           id: 7,
           title: 'Commericial for coffee',
           description: 'A short commericial that we made for some brand of coffee!',
-          image: image2,  
+          image: image4,  
           link: 'https://www.youtube.com/watch?v=g4h9EjR9wW8',
           category: 'Video'
         }
