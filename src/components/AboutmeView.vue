@@ -3,7 +3,7 @@
       <div class="video-cv">
       <iframe width="1270" height="650" src="https://www.youtube.com/embed/-xnen_yAlHs" title="Simon Erik Nyblom - Video CV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
-      <h1 class="text-3xl font-bold">Welcome to my About Page!</h1>
+      <h1 class="text-3xl font-bold">About me!</h1>
     </div>
   
   

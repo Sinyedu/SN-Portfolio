@@ -1,73 +1,73 @@
 <script setup>
 </script>
 <template>
-    <div class="container">
-        <div class="introview">
+ <div class="container">
+        <div class="intro-section">
             <div class="image">
-                <img src="/src/assets/Hero1.jpg" alt="" class="img-simon rounded-full w-96 h-96">
+                <img src="/src/assets/Hero1.jpg" alt="" class="image-simon">
             </div>
             <div class="text">
-                <div class="name-intro-section">
-                <h1><strong>Simon Erik Nyblom</strong></h1>
-                </div>
-                <p class="study text-white ml-2">Multimedia Student<strong class="titlesection ml-2">Frontend Development</strong></p>
+                <h1 class="name-section">SIMON ERIK NYBLOM</h1>
+                <p class="subtitle"> 
+                    En <strong>multimediedesigner</strong> med <strong>passion</strong> for <strong>Frontend Development</strong></p>
             </div>
         </div>
-    </div>
         <div class="flex">
             <img class="h-20 w-25 mt-3 mr-7" src="/src/assets/htmlicon.png" alt="HTML Icon">
             <img class="h-20 w-25 mt-3" src="/src/assets/cssicon.png" alt="CSS Icon">
-            <img class="h-28 w-25 mr-2 ml-3 mt-5" src="/src/assets/Bootstrap.png" alt="Bootstrap Icon">
+            <img class="h-28 w-25 mr-2 ml-3" src="/src/assets/Bootstrap.png" alt="Bootstrap Icon">
             <img class="h-16 w-25 mr-4 mt-6" src="/src/assets/JSIcon.png" alt="JS Icon">
             <img class="h-16 w-25 mr-1 mt-6 ml-3" src="/src/assets/SCSS.png" alt="SCSS Icon">
             <img class="h-16 w-25 mt-6 mr-5" src="/src/assets/VueIcon.png" alt="VUE Icon">
         </div>
+</div>
 </template>
 
 <style lang="scss" scoped>
+
 .container {
     position: relative;
-    left: 10%;
-}
-
-
-.flex {
-    position: relative;
-    left: 2.5%;
+    height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
+    margin: 0;
+    } 
 
-}
-
-.image {
+    .flex {
+    position: absolute;
+    bottom: -3%;
+    left: 14%;
+    width: 100%;
+    }   
+ .intro-section {
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-top: 3rem;
+    gap: 100px;
+    width: 90%;
+    margin: 0 auto;
+    }
+    .image {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    }
+    .image-simon {
+    width: 100%;
+    border-radius: 100%;
+    }
+    .text{
+    grid-column-start: 6;
+    grid-column-end: 15;
+    text-align: center;
 }
-
-.text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3rem;
-}
-
-.name-intro-section {
+    .name-section {
     color: #DBBE1C;
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.titlesection {
-    color: #F92665;
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.study {
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 77px;
+    margin-bottom: 0;
+    }
+    .subtitle {
+    font-size: 25px;
+    }
+strong {
+    color: #8FEC38;
 }
 </style>
