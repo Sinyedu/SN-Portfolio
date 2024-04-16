@@ -28,8 +28,8 @@ const portfolioItems = ref([
         },
         {
           id: 3,
-          title: 'PDF For Local Golf club',
-          description: 'This is a PDF that I made for a local golf club in Denmark. It was made in Adobe Acrobat',
+          title: 'Poster for Local Golf Club',
+          description: 'This is a PDF that I made for a local golf club, where it was about a gift!',
           image: image6,
           category: 'Web'
         },

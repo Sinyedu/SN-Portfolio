@@ -3,12 +3,12 @@
     <div class="heroimg">
       <img class="h-72 w-72 rounded-full" src="/src/assets/Hero1.jpg" alt="Simon Nyblom">
       <div class="flex">
-      <img class="h-16 w-25 mr-3 mt-4" src="/src/assets/htmlicon.png" alt="HTML Icon">
-      <img class="h-16 w-25 mr-3 mt-4" src="/src/assets/cssicon.png" alt="CSS Icon">
-      <img class="h-16 w-25 mr-3 mt-4" src="/src/assets/Bootstrap.png" alt="Bootstrap Icon">
-      <img class="h-16 w-25 mr-3 mt-4" src="/src/assets/JSIcon.png" alt="JS Icon">
-      <img class="h-16 w-25 mr-3 mt-4" src="/src/assets/SCSS.png" alt="SCSS Icon">
-      <img class="h-16 w-25 mr-3 mt-4" src="/src/assets/Vueicon.png" alt="VUE Icon">
+      <img class="h-20 w-25 mt-3 mr-4" src="/src/assets/htmlicon.png" alt="HTML Icon">
+      <img class="h-20 w-25 mt-3" src="/src/assets/cssicon.png" alt="CSS Icon">
+      <img class="h-28 w-25" src="/src/assets/Bootstrap.png" alt="Bootstrap Icon">
+      <img class="h-16 w-25 mr-3 mt-6" src="/src/assets/JSIcon.png" alt="JS Icon">
+      <img class="h-16 w-25 mr-3 mt-6" src="/src/assets/SCSS.png" alt="SCSS Icon">
+      <img class="h-16 w-25 mt-6 mr-6" src="/src/assets/VueIcon.png" alt="VUE Icon">
       </div>
     </div>
   </div>
@@ -23,7 +23,8 @@
 
 .flex {
 position: relative;
-right: 25vh;
+right: 20vh;
+
 }
 
   .heroimg {
