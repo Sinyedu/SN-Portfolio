@@ -15,6 +15,7 @@
             <p class="text-white">Click here for more details!</p>
           </router-link>
 
+
           <h2 class="text-white">{{ portfolioItem.title }}</h2>
           <p class="text-white">{{ portfolioItem.description }}</p>
           <p :class="portfolioItem.stack">{{ portfolioItem.stack }}</p>
