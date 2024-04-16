@@ -1,10 +1,14 @@
 <template>
   <div class="flex justify-end">
     <div class="heroimg">
-      <img class="h-96 w-96 rounded-full" src="/src/assets/Hero1.jpg" alt="Simon Nyblom">
+      <img class="h-72 w-72 rounded-full" src="/src/assets/Hero1.jpg" alt="Simon Nyblom">
       <div class="flex">
-      <img class="h-25 w-32 rounded-3xl mr-3 mt-4" src="/src/assets/htmlicon.png" alt="HTML Icon">
-      <img class="h-25 w-32 rounded-3xl mr-3 mt-4" src="/src/assets/cssicon.png" alt="CSS Icon">
+      <img class="h-16 w-25 mr-3 mt-4" src="/src/assets/htmlicon.png" alt="HTML Icon">
+      <img class="h-16 w-25 mr-3 mt-4" src="/src/assets/cssicon.png" alt="CSS Icon">
+      <img class="h-16 w-25 mr-3 mt-4" src="/src/assets/Bootstrap.png" alt="Bootstrap Icon">
+      <img class="h-16 w-25 mr-3 mt-4" src="/src/assets/JSIcon.png" alt="JS Icon">
+      <img class="h-16 w-25 mr-3 mt-4" src="/src/assets/SCSS.png" alt="SCSS Icon">
+      <img class="h-16 w-25 mr-3 mt-4" src="/src/assets/Vueicon.png" alt="VUE Icon">
       </div>
     </div>
   </div>
@@ -30,12 +34,12 @@ right: 25vh;
     flex-direction: column;
   }
 
-  .w-96 {
-    width: 37rem;
+  .w-72 {
+    width: 30rem;
   }
 
-  .h-96 {
-    height: 37rem;
+  .h-72 {
+    height: 30rem;
   }
 
   .herotext {

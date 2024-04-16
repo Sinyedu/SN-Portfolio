@@ -3,7 +3,7 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-<header>
+  <header>
 <nav>
   <div class="navbar-wrapper fixed top-0 w-full text-white flex justify-between items-center px-4 py-3 pb-5">
   <div class="flex items-center">
@@ -21,8 +21,11 @@ import { RouterLink, RouterView } from 'vue-router'
 </Transition>
 
 </template>
-h
-<style scoped>
+
+<style lang="scss" scoped>
+.nav-flex-justify-center {
+  width: 100vh;
+}
 
 .fade-enter-active, .fade-leave-active {
   transition: opacity 0.75s ease;

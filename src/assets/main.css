@@ -6,11 +6,13 @@
 
 
 
-/* @media (hover: hover) {
+@media (hover: hover) {
   a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+    background-color: #DBBE1C;
+    transition: 0.5s;
+    opacity: 1;
   }
-} */
+}
 
 @media (min-width: 1024px) {
   body {

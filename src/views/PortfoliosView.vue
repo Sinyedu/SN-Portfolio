@@ -1,39 +1,38 @@
 <template>
-    <main>
-      <div v-for="portfolioItem in filteredPortfolioItems" :key="portfolioItem" class="card">
-        <div class="filter-buttons mb-4">
-          <h1 class="text-1xl font-bold underline">
-            <button @click="selectedCategory = 'Video'" class="text-white p-2">Video</button>
-            <button @click="selectedCategory = 'Web'" class="text-white p-2">Web</button>
-            <button @click="selectedCategory = 'Photo'" class="text-white p-2">Photo</button>
-            <button @click="selectedCategory = ''" class="text-white p-2">All</button>
-          </h1>
+  <main>
+    <div class="filter-buttons mb-7">
+        <h1 class="text-2xl font-bold underline">
+          <button @click="selectedCategory = 'Video'" class="text-white p-2">Video</button>
+          <button @click="selectedCategory = 'Web'" class="text-white p-2">Web</button>
+          <button @click="selectedCategory = 'Photo'" class="text-white p-2">Photo</button>
+          <button @click="selectedCategory = ''" class="text-white p-2">All</button>
+        </h1>
+      </div>
+    <div v-for="portfolioItem in filteredPortfolioItems" :key="portfolioItem" class="card w-2/5">
+      <div class="portfolio-item flex items-center">
+        <div class="info mr-4">
+          <router-link :to="`/portfoliodetail/${portfolioItem.id}`">
+            <p class="text-white">Click here for more details!</p>
+          </router-link>
+
+          <h2 class="text-white">{{ portfolioItem.title }}</h2>
+          <p class="text-white">{{ portfolioItem.description }}</p>
+          <p :class="portfolioItem.stack">{{ portfolioItem.stack }}</p>
+          <p :class="portfolioItem.category">{{ portfolioItem.category }}</p>
         </div>
-       
-        <div class="portfolio-item flex items-center">
-          <div class="info mr-4">
-        <router-link :to="`/portfoliodetail/${portfolioItem.id}`"> 
-          <p class="text-white">Click here for more details!</p>
-        </router-link>
-         
-        <h2 class="text-white">{{ portfolioItem.title }}</h2>
-        <p class="text-white">{{ portfolioItem.description }}</p>
-        <p :class="portfolioItem.stack">{{ portfolioItem.stack }}</p>
-        <p :class="portfolioItem.category">{{ portfolioItem.category }}</p>
-        </div>
-        
+
         <img :src="portfolioItem.image" alt="">
       </div>
-        <div class="projectlink" v-if="portfolioItem.link">
-          <a :href="portfolioItem.link">Link for the project!</a>
-        </div>
-        <div v-else>
-  
-        </div>
+      <div class="projectlink" v-if="portfolioItem.link">
+        <a :href="portfolioItem.link">Link for the project!</a>
       </div>
-    
-    </main>
-  </template>
+      <div v-else>
+
+      </div>
+    </div>
+
+  </main>
+</template>
   <script setup>
   import { ref, computed } from 'vue'
   const { portfolioItems } = getPortfolio()
@@ -55,10 +54,7 @@
   .projectlink {
     color: white;
   }
-
-
   .card {
-    width: 100vh;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -92,5 +88,14 @@
 
   .selectedCategory {
     z-index: 1;
+  }
+
+
+
+  @media screen and (max-width: 768px){
+    .card {
+      width: 40vh;
+    }
+    
   }
   </style>
