@@ -19,8 +19,14 @@ import PortfoliosView from '@/views/PortfoliosView.vue';
 </template>
 
 <style lang="scss" scoped>
+
+
+
+
 body {
   margin: 0 !important;
+  background-color: #1c1c1c;
+  background-image: linear-gradient(to bottom, #1c1c1c, #000000);
 }
 *{
   margin: 0;
