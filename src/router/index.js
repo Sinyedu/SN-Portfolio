@@ -41,7 +41,7 @@ const router = createRouter({
     },
     {
       path: '/portfoliodetail/:id',
-      name: 'portfoliodetails',
+      name: 'details',
       component: () => import('../views/PortfolioDetailView.vue'),
       meta: {
         dynamicTitle: true
