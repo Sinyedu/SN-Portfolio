@@ -16,13 +16,13 @@ import { RouterLink, RouterView } from 'vue-router'
   </div>
 </nav>
 </header>
-<Transition mode="out-in" name="slide-fade">
+<Transition mode="out-in" name="fade">
   <RouterView/>
 </Transition>
 
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .nav-flex-justify-center {
   width: 100vh;
 }
@@ -33,10 +33,6 @@ import { RouterLink, RouterView } from 'vue-router'
 
 .fade-enter-from, .fade-leave-to {
   opacity: 0;
-}
-
-.slide-fade-enter-active, .slide-fade-leave-active {
-  transition: all 1s ease;
 }
 
 .slide-fade-enter-from, .slide-fade-leave-to {

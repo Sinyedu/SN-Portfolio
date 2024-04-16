@@ -96,6 +96,9 @@
     .card {
       width: 40vh;
     }
-    
+    .navbar-wrapper {
+      top: 30px;
+      right: 70px;
+    }
   }
   </style>

@@ -1,7 +1,7 @@
 <template>
   <div class="flex justify-end">
     <div class="heroimg">
-      <img class="h-72 w-72 rounded-full" src="/src/assets/Hero1.jpg" alt="Simon Nyblom">
+      <img class="rounded-full w-72 h-72" src="/src/assets/Hero1.jpg" alt="Simon Nyblom">
     </div>
   </div>
 
@@ -12,16 +12,19 @@
     <div class="flex">
       <img class="h-20 w-25 mt-3 mr-7" src="/src/assets/htmlicon.png" alt="HTML Icon">
       <img class="h-20 w-25 mt-3" src="/src/assets/cssicon.png" alt="CSS Icon">
-      <img class="h-28 w-25 mr-4 ml-3" src="/src/assets/Bootstrap.png" alt="Bootstrap Icon">
-      <img class="h-16 w-25 mr-5 mt-6" src="/src/assets/JSIcon.png" alt="JS Icon">
+      <img class="h-28 w-25 mr-2 ml-3" src="/src/assets/Bootstrap.png" alt="Bootstrap Icon">
+      <img class="h-16 w-25 mr-4 mt-6" src="/src/assets/JSIcon.png" alt="JS Icon">
       <img class="h-16 w-25 mr-1 mt-6 ml-3" src="/src/assets/SCSS.png" alt="SCSS Icon">
       <img class="h-16 w-25 mt-6 mr-5" src="/src/assets/VueIcon.png" alt="VUE Icon">
     </div>
   </div>
+<Transition mode="out-in" name="fade">
+<RouterView/>
+</Transition>
 </template>
 
 
-<style scoped>
+<style>
 .name {
   color: #F92665;
 }
@@ -55,5 +58,27 @@ color: #DBBE1C;
     left: 10vh;
     top: 42vh;
     position: absolute;
+  }
+
+
+
+
+
+  @media screen and (max-width: 1024px) {
+    .heroimg {
+      top: 82px;
+      right: 40px;
+      height: 50px;
+      width: 350px;
+    }
+    .herotext {
+      left: 3vh;
+      top: 47vh;
+    }
+    .flex {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
   }
 </style>
