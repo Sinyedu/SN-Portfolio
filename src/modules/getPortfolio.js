@@ -4,6 +4,7 @@ import image1 from '@/assets/Trapholt.png'
 import image2 from '@/assets/plakat.png'
 import image3 from '@/assets/XDDesign1.png'
 import image4 from '@/assets/Reklame1.png'
+import image5 from '@/assets/Dicegame.png'
 
 const getPortfolioItems = () => {
 const portfolioItems = ref([
@@ -19,9 +20,9 @@ const portfolioItems = ref([
         {
           id: 2,
           title: 'Dice Game',
-          description: 'This is a small dice game that I built to understand the basics of JavaScript',
-          image: 'https://via.placeholder.com/150',
-          link: '',
+          description: 'This is a small dice game I created, to understand the basics of JavaScript',
+          image: image5,
+          link: 'https://github.com/Sinyedu/Dice-Game',
           category: 'Web'
         },
         {
