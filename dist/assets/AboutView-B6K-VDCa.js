@@ -1,0 +1,1 @@
+import{_ as e,c as o,o as t,a as s}from"./index-CvHwlIm1.js";const c={},a={class:"about"},_=s("h1",{class:"text-3xl font-bold"},"Welcome to my About Page!",-1),n=[_];function r(d,l){return t(),o("div",a,n)}const f=e(c,[["render",r]]);export{f as default};

@@ -2,32 +2,39 @@
   <div class="flex justify-end">
     <div class="heroimg">
       <img class="h-72 w-72 rounded-full" src="/src/assets/Hero1.jpg" alt="Simon Nyblom">
-      <div class="flex">
-      <img class="h-20 w-25 mt-3 mr-4" src="/src/assets/htmlicon.png" alt="HTML Icon">
-      <img class="h-20 w-25 mt-3" src="/src/assets/cssicon.png" alt="CSS Icon">
-      <img class="h-28 w-25" src="/src/assets/Bootstrap.png" alt="Bootstrap Icon">
-      <img class="h-16 w-25 mr-3 mt-6" src="/src/assets/JSIcon.png" alt="JS Icon">
-      <img class="h-16 w-25 mr-3 mt-6" src="/src/assets/SCSS.png" alt="SCSS Icon">
-      <img class="h-16 w-25 mt-6 mr-6" src="/src/assets/VueIcon.png" alt="VUE Icon">
-      </div>
     </div>
   </div>
 
   <div class="herotext">
-    <h1 class="text-4xl font-bold">Simon Erik Nyblom</h1>
-    <p class="text-2xl"> Multimedia Student, with a passion for Frontend Development</p>
+    <h1 class="name text-4xl font-bold">Simon Erik Nyblom</h1>
+    <p class="colortxt text-2xl">Multimedia Student</p>
+    <p class="colortxt2 text-2xl">with a passion for Frontend Development</p>
+    <div class="flex">
+      <img class="h-20 w-25 mt-3 mr-7" src="/src/assets/htmlicon.png" alt="HTML Icon">
+      <img class="h-20 w-25 mt-3" src="/src/assets/cssicon.png" alt="CSS Icon">
+      <img class="h-28 w-25 mr-4 ml-3" src="/src/assets/Bootstrap.png" alt="Bootstrap Icon">
+      <img class="h-16 w-25 mr-5 mt-6" src="/src/assets/JSIcon.png" alt="JS Icon">
+      <img class="h-16 w-25 mr-1 mt-6 ml-3" src="/src/assets/SCSS.png" alt="SCSS Icon">
+      <img class="h-16 w-25 mt-6 mr-5" src="/src/assets/VueIcon.png" alt="VUE Icon">
+    </div>
   </div>
 </template>
 
+
 <style scoped>
-
-.flex {
-position: relative;
-right: 20vh;
-
+.name {
+  color: #F92665;
 }
 
-  .heroimg {
+.colortxt {
+color: #DBBE1C;
+}
+
+.colortxt2 {
+  color: #8FEC38;
+}
+
+.heroimg {
     position: relative;
     width: 200vh;
     display: flex;
@@ -46,7 +53,7 @@ right: 20vh;
   .herotext {
     color: white;
     left: 10vh;
-    top: 30vh;
+    top: 42vh;
     position: absolute;
   }
 </style>

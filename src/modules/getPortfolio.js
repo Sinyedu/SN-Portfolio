@@ -6,6 +6,7 @@ import image3 from '@/assets/XDDesign1.png'
 import image4 from '@/assets/Reklame1.png'
 import image5 from '@/assets/Dicegame.png'
 import image6 from '@/assets/Mændgolf.png'
+import image7 from '@/assets/Golfpdf.png'
 
 const getPortfolioItems = () => {
 const portfolioItems = ref([
@@ -37,7 +38,8 @@ const portfolioItems = ref([
           id: 4,
           title: 'PDF For Local Golf club2',
           description: 'This is the second portfolio item that I made for the local golf club in Denmark. It was made in Adobe Acrobat',
-          image: 'https://via.placeholder.com/150',
+          image: image7,
+          link: 'https://acrobat.adobe.com/id/urn:aaid:sc:EU:3385a69a-763a-492f-9366-27aaf58fe590',
           category: 'Web'
         },
         {
