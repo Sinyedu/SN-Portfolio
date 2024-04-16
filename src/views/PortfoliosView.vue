@@ -58,8 +58,8 @@
     height: auto;
     display: flex;
     flex-direction: column;
-    color:#333;
-    background-color: #1c1c1c;
+    color:#5C323E;
+    background-color: #5C323E;
     padding: 1rem;
     margin: 1rem;
     border-radius: 5px;
@@ -95,10 +95,6 @@
   @media screen and (max-width: 768px){
     .card {
       width: 40vh;
-    }
-    .navbar-wrapper {
-      top: 30px;
-      right: 70px;
     }
   }
   </style>

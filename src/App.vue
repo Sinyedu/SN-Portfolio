@@ -16,9 +16,7 @@ import { RouterLink, RouterView } from 'vue-router'
   </div>
 </nav>
 </header>
-<Transition mode="out-in" name="fade">
-  <RouterView/>
-</Transition>
+<RouterView />
 
 </template>
 
@@ -27,18 +25,6 @@ import { RouterLink, RouterView } from 'vue-router'
   width: 100vh;
 }
 
-.fade-enter-active, .fade-leave-active {
-  transition: opacity 0.75s ease;
-}
-
-.fade-enter-from, .fade-leave-to {
-  opacity: 0;
-}
-
-.slide-fade-enter-from, .slide-fade-leave-to {
-  opacity: 0;
-  transform: translate(50px);
-}
 
 .logo {
   display: block;
