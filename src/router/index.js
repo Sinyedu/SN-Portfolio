@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import AboutmeView from '../components/AboutmeView.vue'
+import ContactView from '../components/ContactView.vue'
+import MainView from '../components/MainView.vue'
 import getPortfolioItems from '../modules/getPortfolio.js'
 
 const router = createRouter({
@@ -8,7 +10,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView,
+      component: MainView,
       meta: {
         title: 'Home'
       }
@@ -16,9 +18,17 @@ const router = createRouter({
     {
       path: '/about',
       name: 'about',
-      component: () => import('../views/AboutView.vue'),
+      component: AboutmeView,
       meta: {
         title: 'About'
+      }
+    },
+    {
+      path: '/contact',
+      name: 'contact',
+      component: ContactView,
+      meta: {
+        title: 'Contact'
       }
     },
     {
