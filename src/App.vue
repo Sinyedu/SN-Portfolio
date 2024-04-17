@@ -4,20 +4,28 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
 <header>
-  <div class="navbar-wrapper top-0 w-full text-white flex justify-between items-center px-4 py-3 pb-2" id="navbarapp">
+<nav>
+<div class="container">
+  <div class="navbar top-0 w-full text-white flex justify-between items-center px-4 py-3 pb-2" id="navbarapp">
       <div class="flex items-center">
       <RouterLink to="/" class="mr-4">Home</RouterLink>
       <RouterLink to="/about" class="mr-4">About</RouterLink>
       <RouterLink to="/portfolio">Projects</RouterLink>
       </div>
   </div>
-
+</div>
+</nav>
 </header>
 <Transition mode="out-in" name="slide-fade">
   <RouterView/>
 </Transition>
 </template>
 <style scoped>
+.container {
+  width: 500vh;
+}
+
+
 .navbarapp {
   align-items: center;
   position: inherit;
@@ -47,6 +55,10 @@ import { RouterLink, RouterView } from 'vue-router'
   display: block;
   margin: 0 auto 2rem;
 }
+.navbar {
+  background-color: #a6a6a6;
+}
+
 nav a.router-link-exact-active {
   color: var(--color-text);
 }
