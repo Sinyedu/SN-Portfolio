@@ -1,7 +1,7 @@
 <template>
   <main>
-    <div v-for="portfolioItem in filteredPortfolioItems" :key="portfolioItem" class="card">
-      <div class="filter-buttons mb-4">
+  <div class="centercontainer">
+    <div class="filter-buttons mb-4 flex justify-center">
         <h1 class="text-1xl font-bold underline">
           <button @click="selectedCategory = 'Video'" class="text-white p-2">Video</button>
           <button @click="selectedCategory = 'Web'" class="text-white p-2">Web</button>
@@ -9,7 +9,7 @@
           <button @click="selectedCategory = ''" class="text-white p-2">All</button>
         </h1>
       </div>
-     
+    <div v-for="portfolioItem in filteredPortfolioItems" :key="portfolioItem" class="card">   
       <div class="portfolio-item flex items-center">
         <div class="info mr-4">
        
@@ -28,7 +28,7 @@
 
       </div>
     </div>
-
+  </div>
   </main>
 </template>
 
