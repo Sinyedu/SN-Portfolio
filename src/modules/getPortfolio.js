@@ -13,7 +13,7 @@ const getPortfolioItems = () => {
           {
             id: 1,
             title: 'Trapholt Museum',
-            description: 'The first proper webpage that we built for our First Semester project!',
+            description: 'First Semester Project built in HTML, CSS and Bootstrap!',
             image: image1,
             link: 'https://museum-trapholt.dk',
             category: 'Web'
@@ -22,29 +22,29 @@ const getPortfolioItems = () => {
           {
             id: 2,
             title: 'Dice Game',
-            description: 'This is a small dice game that I built to understand the basics of JavaScript',
+            description: 'A freetime project made for understanding the basics of JavaScript!',
             image: image5,
-            link: '',
+            link: 'https://github.com/Sinyedu/Dice-Game',
             category: 'Web'
           },
           {
             id: 3,
-            title: 'PDF For Local Golf club',
-            description: 'This is a PDF that I made for a local golf club in Denmark. It was made in Adobe Acrobat',
+            title: 'Poster for Golf Exhibition',
+            description: 'Poster with different offers for my local Golf Club',
             image:image7,
-            category: 'Web'
+            category: 'Photo'
           },
           {
             id: 4,
-            title: 'PDF For Local Golf club2',
-            description: 'This is the second portfolio item that I made for the local golf club in Denmark. It was made in Adobe Acrobat',
+            title: 'PDF For Local Golf club',
+            description: 'Poster with enticing offers to start playing golf!',
             image: image6,
-            category: 'Web'
+            category: 'Web',
           },
           {
             id: 5,
             title: 'XD App Design',
-            description: 'This is a design that we made in Adobe XD for a project in our first semester, that was made for Job searching!',
+            description: 'App we made in Adobe XD for a UX project in our first semester. App was meant to be a Job Portal for students!',
             image: image3,
             link: 'https://xd.adobe.com/view/0e6742e1-b015-4dbb-b6f1-2a387be780c0-5b34/?fullscreen',
             category: 'Web'
@@ -54,7 +54,7 @@ const getPortfolioItems = () => {
             title: 'Poster for Sustainability',
             description: 'A poster for Sustainability that was in tandem with our Sustainability week!',
             image: image2,  
-            link: 'Press here for the viewing of the Project!',
+            link: '',
             category: 'Photo'
           },
           {
@@ -62,7 +62,7 @@ const getPortfolioItems = () => {
             title: 'Commericial for coffee',
             description: 'A short commericial that we made for some brand of coffee!',
             image: image4,  
-            link: 'https://www.youtube.com/watch?v=g4h9EjR9wW8',
+            link:'https://www.youtube.com/watch?v=g4h9EjR9wW8',
             category: 'Video'
           }
         ])
