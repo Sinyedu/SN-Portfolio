@@ -2,7 +2,7 @@
   <main>
   <div class="centercontainer">
     <div class="filter-buttons mb-4 flex justify-center">
-        <h1 class="text-1xl font-bold underline">
+        <h1 class="text-1xl font-bold underline pt-7">
           <button @click="selectedCategory = 'Video'" class="text-white p-2">Video</button>
           <button @click="selectedCategory = 'Web'" class="text-white p-2">Web</button>
           <button @click="selectedCategory = 'Photo'" class="text-white p-2">Photo</button>
@@ -50,6 +50,18 @@ const filteredPortfolioItems = computed(() =>{
 </script>
 
 <style lang="scss">
+
+.centercontainer {
+  position: relative;
+  left: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
 .projectlink {
   color: white;
 }
@@ -58,8 +70,7 @@ const filteredPortfolioItems = computed(() =>{
   height: auto;
   display: flex;
   flex-direction: column;
-  color:#333;
-  background-color: #1c1c1c;
+  background-color:rgb(151, 151, 151);
   padding: 1rem;
   margin: 1rem;
   border-radius: 5px;
@@ -68,7 +79,7 @@ const filteredPortfolioItems = computed(() =>{
 .card img {
   display: flex;
   width: 55%;
-  height: auto;
+  height: 55%;
   margin-top: 1rem;
 }
 .HTML {

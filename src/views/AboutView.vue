@@ -12,6 +12,23 @@
 </script>
 
 <style lang="scss" scoped>
+.container {
+    width: 500vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    justify-content: center;
+    gap: 100px;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding-left: 450px;
+    text-align: center;
+}
+
+
+
+
 .aboutmetext {
     font-size: 1.5rem;
 }

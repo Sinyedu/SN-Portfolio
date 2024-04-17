@@ -6,7 +6,7 @@ import { RouterLink, RouterView } from 'vue-router'
 <header>
 <nav>
 <div class="container">
-  <div class="navbar top-0 w-full text-white flex justify-between items-center px-4 py-3 pb-2" id="navbarapp">
+  <div class="navbar top-0 w-full fixed text-white flex justify-between items-center px-4 py-3 pb-2" id="navbarapp">
       <div class="flex items-center">
       <RouterLink to="/" class="mr-4">Home</RouterLink>
       <RouterLink to="/about" class="mr-4">About</RouterLink>
@@ -20,7 +20,13 @@ import { RouterLink, RouterView } from 'vue-router'
   <RouterView/>
 </Transition>
 </template>
-<style scoped>
+<style>
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1c1c1c;
+}
 .container {
   width: 500vh;
 }
@@ -54,9 +60,6 @@ import { RouterLink, RouterView } from 'vue-router'
 .logo {
   display: block;
   margin: 0 auto 2rem;
-}
-.navbar {
-  background-color: #a6a6a6;
 }
 
 nav a.router-link-exact-active {
