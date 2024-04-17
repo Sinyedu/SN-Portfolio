@@ -24,7 +24,6 @@ const route = useRoute()
 const id = ref(route.params.id)
 
 const specificPortfolioItem = portfolioItems.value.find(item => item.id == id.value)
-console.log(specificPortfolioItem)
 </script>
 
 <style lang="scss" scoped>

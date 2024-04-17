@@ -1,8 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import AboutmeView from '../components/AboutmeView.vue'
-import ContactView from '../components/ContactView.vue'
-import MainView from '../components/MainView.vue'
-import getPortfolioItems from '../modules/getPortfolio.js'
+import HomeView from '../views/HomeView.vue'
+import getProjectItems from '@/modules/getPortfolio.js'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -10,62 +8,50 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: MainView,
+      component: HomeView,
       meta: {
-        title: 'Home'
+        title: "Home"
       }
     },
     {
       path: '/about',
-      name: 'about',
-      component: AboutmeView,
+      name: 'About Me',
+      component: () => import('../views/AboutView.vue'),
       meta: {
-        title: 'About'
-      }
-    },
-    {
-      path: '/contact',
-      name: 'contact',
-      component: ContactView,
-      meta: {
-        title: 'Contact'
+        title: "About"
       }
     },
     {
       path: '/portfolio',
-      name: 'portfolio',
+      name: 'My Projects',
       component: () => import('../views/PortfoliosView.vue'),
       meta: {
-        title: 'Projects'
+        title:"Projects"
       }
     },
     {
-      path: '/portfoliodetail/:id',
-      name: 'details',
+      path: '/projectdetails/:id',
+      name: 'Project Details',
       component: () => import('../views/PortfolioDetailView.vue'),
       meta: {
         dynamicTitle: true
       }
-    }
+    },
   ]
 })
 
-// router.beforeEach((to, from, next) => {
-//   document.title = `SN | ${to.meta.title}`
-//   next()
-// })
-
-router.beforeEach ((to, from, next) => {
-if (to.meta.dynamicTitle) {
-  const portfolioItems = getPortfolioItems()
-  .portfolioItems.value.find(item => item.id == to.params.id)
-  if(portfolioItems) {
-    document.title = `SN | ${portfolioItems.title}`
+router.beforeEach((to, from, next) => {
+  if(to.meta.dynamicTitle){
+    const projectItems = getProjectItems()
+    .projectItems.value.find(item => item.id == to.params.id)
+    if(projectItems){
+      document.title = `SN Portfolio | ${projectItems.title}`
+    }
   }
-}
-  else {
-    document.title = `SN | ${to.meta.title}`
+  else{
+    document.title = `SN Portfolio | ${to.meta.title}`
   }
-next()
+  next()
 })
+
 export default router

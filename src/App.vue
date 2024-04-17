@@ -1,35 +1,74 @@
 <script setup>
-import { RouterView } from 'vue-router'
-import IntroView from '@/components/IntroView.vue';
-import MainView from '@/components/MainView.vue';
-import AboutmeView from '@/components/AboutmeView.vue';
-import ContactView from '@/components/ContactView.vue';
-import FooterView from '@/components/FooterView.vue';
-import PortfoliosView from '@/views/PortfoliosView.vue';
+import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-    <IntroView/>
-    <MainView/>
-    <AboutmeView/>
-    <PortfoliosView/>
-    <ContactView/>
-    <FooterView/>
-  <RouterView />
+<header>
+  <div class="navbar-wrapper top-0 w-full text-white flex justify-between items-center px-4 py-3 pb-2" id="navbarapp">
+      <div class="flex items-center">
+      <RouterLink to="/" class="mr-4">Home</RouterLink>
+      <RouterLink to="/about" class="mr-4">About</RouterLink>
+      <RouterLink to="/portfolio">Projects</RouterLink>
+      </div>
+  </div>
+
+</header>
+<Transition mode="out-in" name="slide-fade">
+  <RouterView/>
+</Transition>
 </template>
-
-<style lang="scss" scoped>
-
-
-
-
-body {
-  margin: 0 !important;
-  background-color: #1c1c1c;
-  background-image: linear-gradient(to bottom, #1c1c1c, #000000);
+<style scoped>
+.navbarapp {
+  align-items: center;
+  position: inherit;
 }
-*{
-  margin: 0;
-  padding: 0;
+
+.navbar-wrapper {
+  position: inherit;
+  width: 25vh;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
 }
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.75s ease;
+}
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+}
+.slide-fade-enter-active, .slide-fade-leave-active {
+  transition: all 1s ease;
+}
+.slide-fade-enter-from, .slide-fade-leave-to {
+  opacity: 0;
+  transform: translate(50px);
+}
+.logo {
+  display: block;
+  margin: 0 auto 2rem;
+}
+nav a.router-link-exact-active {
+  color: var(--color-text);
+}
+nav a.router-link-exact-active:hover {
+  background-color: transparent;
+}
+nav a {
+  display: inline-block;
+  padding: 0 1rem;
+  border-left: 1px solid var(--color-border);
+}
+nav a:first-of-type {
+  border: 0;
+}
+/* 
+@media (min-width: 1024px) {
+  header {
+    display: flex;
+    padding-right: calc(var(--section-gap) / 2);
+  }
+  .logo {
+    margin: 0 2rem 0 0;
+  }
+} */
 </style>
