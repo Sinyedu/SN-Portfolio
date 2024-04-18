@@ -17,6 +17,12 @@
         <p class="text-white">
           Beyond my coding prowess, I possess a diverse set of <strong class="red">professional</strong> skills that you can explore further in my <strong class="gold">CV</strong>. <br> So, if you're curious to learn more about how I can contribute to your team or project, <strong class="red">let's connect</strong>!
         </p>
+        <dir class="video-container">
+        <iframe class="responsive-iframe" width="1236" height="695" src="https://www.youtube.com/embed/-xnen_yAlHs" title="Simon Erik Nyblom - Video CV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </dir>
+        <div class="container2">
+       <a href="./public/CV.pdf" download="CV.pdf" class="btndown text-white flex items-center justify-center bg-blue-500 hover:bg-blue-600 text-lg font-semibold py-2 px-4 rounded shadow" id="btndown"><button>Download CV</button></a> 
+        </div>
       </div>
     </div>
     <div class="links flex justify-center" id="contact">
@@ -31,7 +37,30 @@
   </template>
   
   <style lang="scss" scoped>
+  .video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  overflow: hidden;
+  }
 
+  .responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  }
+
+
+  .container2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .btndown {
+    width: 30%;
+  }
   .icons {
     display: flex;
     flex-direction: row;
@@ -49,6 +78,9 @@
   }
   
   .simonimg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 350px;
     flex-shrink: 0; 
     margin-right: 20px;
@@ -77,7 +109,7 @@
 @media screen and (max-width: 1200px){
     .aboutmetext {
       font-size: 1.2rem;
-      max-width: 100%;
+      max-width: 80%;
     }
 
     .contact {
@@ -87,11 +119,11 @@
 @media screen and (max-width: 1024px){
     .aboutmetext {
       font-size: 1.2rem;
-      max-width: 60%;
+      max-width: 40%;
     }
     .container {
       justify-content: center;
-      align-items: start; 
+      align-items: center; 
     }
     .container img {
       width: 100%;
@@ -107,10 +139,39 @@
     }
   }
 
+  @media screen and (max-width: 900px){
+    .aboutmetext {
+      font-size: 1.1rem;
+      max-width: 50%;
+    }
+    .container {
+      justify-content: start;
+      align-items: start; 
+    }
+    .container img {
+      width: 100%;
+    }
+    .contact {
+      font-size: 1.5rem;
+    }
+    .links {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+    }
+    
+  }
+
   @media screen and (max-width: 749px){
     .aboutmetext {
       font-size: 1rem;
       max-width: 30%;
+      
+    }
+    .container {
+      justify-content: start;
+      align-items: start; 
     }
     .contact {
       display: flex;
@@ -130,7 +191,7 @@
   @media screen and (max-width: 500px){
     .aboutmetext {
       font-size: 0.8rem;
-      max-width: 20%;
+      max-width: 35%;
     }
     .contact {
       display: flex;
@@ -146,7 +207,7 @@
       align-items: center;
     }
     .container img {
-      width: 70%;
+      width: 90%;
     }
     
   }
