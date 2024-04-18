@@ -6,7 +6,7 @@ import { RouterLink, RouterView } from 'vue-router'
 <header>
 <nav>
 <div class="container">
-  <div class="navbar top-0 w-full fixed text-white flex justify-between items-center px-4 py-3 pb-2" id="navbarapp">
+  <div class="navbar top-0 w-full text-white flex justify-between items-center px-4 py-3 pb-2" id="navbarapp">
       <div class="flex items-center">
       <RouterLink to="/" class="mr-4">Home</RouterLink>
       <RouterLink to="/about" class="mr-4">About</RouterLink>
@@ -16,6 +16,10 @@ import { RouterLink, RouterView } from 'vue-router'
 </div>
 </nav>
 </header>
+<footer>
+
+  
+</footer>
 <Transition mode="out-in" name="slide-fade">
   <RouterView/>
 </Transition>
@@ -36,7 +40,6 @@ body {
   align-items: center;
   position: inherit;
 }
-
 .navbar-wrapper {
   position: inherit;
   width: 25vh;
@@ -55,11 +58,6 @@ body {
 }
 .slide-fade-enter-from, .slide-fade-leave-to {
   opacity: 0;
-  transform: translate(50px);
-}
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
 }
 
 nav a.router-link-exact-active {
@@ -67,6 +65,7 @@ nav a.router-link-exact-active {
 }
 nav a.router-link-exact-active:hover {
   background-color: transparent;
+  
 }
 nav a {
   display: inline-block;
@@ -76,14 +75,23 @@ nav a {
 nav a:first-of-type {
   border: 0;
 }
+
+a {
+  opacity: .5;
+  transition: 0.5s ease;
+}
+a:hover {
+  opacity: 1;
+}
+
+#app {
+  overflow: hidden;
+}
 /* 
 @media (min-width: 1024px) {
   header {
     display: flex;
     padding-right: calc(var(--section-gap) / 2);
-  }
-  .logo {
-    margin: 0 2rem 0 0;
   }
 } */
 </style>

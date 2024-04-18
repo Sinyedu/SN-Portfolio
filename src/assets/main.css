@@ -6,11 +6,5 @@
 
 
 
-@media (hover: hover) {
-  a:hover {
-    background-color: #DBBE1C;
-    transition: 0.5s;
-    opacity: 1;
-  }
-}
+
 

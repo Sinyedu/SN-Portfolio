@@ -4,92 +4,146 @@
 <template>
   <div class="container">
     <div class="intro-section">
-    <span class="bracket1">{</span>
+      <span class="bracket1">{</span>
       <div class="text">
         <h1 class="name-section text-white">
           Simon Erik Nyblom
         </h1>
-        <p class="subtitle">
-          <strong class="text-white">Aspiring Frontend Developer</strong>
+        <p class="subtitle text-white">
+          Aspiring Frontend Developer
         </p>
       </div>
+      <span class="bracket2">}</span> 
     </div>
-    <span class="bracket2">}</span> 
   </div>
-  
 </template>
 
 <style lang="scss" scoped>
-
-
-.bracket1 {
-    position: relative;
-    top: -35px;
-    left: 350px;
+  .bracket1, .bracket2 {
+    position: absolute;
+    top: 22%;
     font-size: 500px;
     color: #DBBE1C;
-}
-
-.bracket2 {
-    position: relative;
-    top: -35px;
-    right: 50px;
-    font-size: 500px;
-    color: #DBBE1C;
-
   }
 
-  body {
-    margin: 0;
-    padding: 0;
-    background-color: #1c1c1c;
+  .bracket1 {
+    left: -3%;
+    transform: translate(-50%, -50%);
+  }
+
+  .bracket2 {
+    right: -3%;
+    transform: translate(50%, -50%);
   }
 
   .container {
-    width: 500vh;
+    max-width: 100%;
+    width: 100%;
     height: 100vh;
     display: flex;
+    justify-content: center;
     align-items: center;
+    text-align: center;
     margin: 0;
+    padding: 0;
+    position: relative;
   }
 
   .intro-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 100px;
-    max-width: 1250px;
+    max-width: 90%;
     margin: 0 auto;
+    position: relative;
   }
 
   .text {
-    padding-left: 300px;
+    padding-top: 50px;
     text-align: center;
   }
 
   .name-section {
-  font-size: 71px;
-  margin-bottom: 0;
-  position: relative;
-}
+    font-size: 71px;
+    margin-bottom: 0;
+    position: relative;
+  }
 
-.name-section::after {
-  content: ''; 
-  position: absolute; 
-  bottom: 5px; 
-  left: 0; 
-  width: 100%; 
-  height: 3px;
-  background-color: #ffffff;
-}
   .subtitle {
     font-size: 25px;
   }
 
-  @media screen and (max-width: 1220px) {
-    body {
-      background-color: #1c1c1c;
-      background-image: none;
+  @media screen and (max-width: 749px) {
+    .name-section {
+      font-size: 40px;
+    }
+    .subtitle {
+      font-size: 20px;
+    }
+    .bracket1 {
+      font-size: 150px;
+      left: -5%;
+      bottom: -35%;
+    }
+    .bracket2 {
+      font-size: 150px;
+      right: -5%;
+      bottom: -35%;
     }
   }
+
+  @media screen and (max-width: 500px) {
+    .name-section {
+      font-size: 30px;
+    }
+    .subtitle {
+      font-size: 15px;
+    }
+    .bracket1 {
+      font-size: 100px;
+      left: -5%;
+      bottom: 10%;
+    }
+    .bracket2 {
+      font-size: 100px;
+      right: -5%;
+      bottom: 10%;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .name-section {
+      font-size: 25px;
+    }
+    .subtitle {
+      font-size: 12px;
+    }
+    .bracket1 {
+      font-size: 80px;
+      left: -5%;
+      bottom: 30%;
+    }
+    .bracket2 {
+      font-size: 80px;
+      right: -5%;
+      bottom: 30%;
+    }
+  }
+
+  @media screen and (max-width: 300px) {
+    .name-section {
+      font-size: 20px;
+    }
+    .subtitle {
+      font-size: 10px;
+    }
+    .bracket1 {
+      font-size: 60px;
+      left: -5%;
+      bottom: 70%;
+    }
+    .bracket2 {
+      font-size: 60px;
+      right: -5%;
+      bottom: 70%;
+    }
+  }
+  
 </style>
