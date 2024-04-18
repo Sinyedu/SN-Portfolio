@@ -127,5 +127,29 @@
     }
   }
 
+  @media screen and (max-width: 500px){
+    .aboutmetext {
+      font-size: 0.8rem;
+      max-width: 20%;
+    }
+    .contact {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+    }
+    .links
+    {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+    }
+    .container img {
+      width: 70%;
+    }
+    
+  }
+
   </style>
   
