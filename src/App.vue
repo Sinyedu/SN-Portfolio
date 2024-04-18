@@ -77,11 +77,11 @@ nav a:first-of-type {
 }
 
 a {
-  opacity: .5;
+  opacity: 1;
   transition: 0.5s ease;
 }
 a:hover {
-  opacity: 1;
+  color: #25E98A;
 }
 
 #app {

@@ -21,7 +21,7 @@
         <iframe class="responsive-iframe" width="1236" height="695" src="https://www.youtube.com/embed/-xnen_yAlHs" title="Simon Erik Nyblom - Video CV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </dir>
         <div class="container2">
-       <a href="./public/CV.pdf" download="CV.pdf" class="btndown text-white flex items-center justify-center bg-blue-500 hover:bg-blue-600 text-lg font-semibold py-2 px-4 rounded shadow" id="btndown"><button>Download CV</button></a> 
+       <a href="CV.pdf" download="CV.pdf" class="btndown text-white flex items-center justify-center bg-blue-500 hover:bg-blue-600 text-lg font-semibold py-2 px-4 rounded shadow" id="btndown"><button>Download CV</button></a> 
         </div>
       </div>
     </div>
