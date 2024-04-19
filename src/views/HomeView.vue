@@ -56,7 +56,7 @@
   }
 
   .text {
-    padding-top: 50px;
+    padding-top: 9%;
     text-align: center;
   }
 
@@ -74,6 +74,9 @@
     .name-section {
       font-size: 40px;
     }
+    .text {
+      padding-top: 5%;
+    }
     .subtitle {
       font-size: 20px;
     }
@@ -88,6 +91,13 @@
       bottom: -35%;
     }
   }
+@media screen and (max-width: 750px){
+  .text {
+    padding-top: 13%;
+  }
+}
+
+
 
   @media screen and (max-width: 500px) {
     .name-section {
@@ -108,9 +118,12 @@
     }
   }
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 500px) {
     .name-section {
       font-size: 25px;
+    }
+    .text {
+      padding-top: 20%;
     }
     .subtitle {
       font-size: 12px;
@@ -130,6 +143,9 @@
   @media screen and (max-width: 300px) {
     .name-section {
       font-size: 20px;
+    }
+    .text {
+      padding-top: 30%;
     }
     .subtitle {
       font-size: 10px;

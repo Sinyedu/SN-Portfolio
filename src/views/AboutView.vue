@@ -37,6 +37,12 @@
   </template>
   
   <style lang="scss" scoped>
+
+  #app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .video-container {
   position: relative;
   width: 100%;
@@ -59,7 +65,7 @@
   }
 
   .btndown {
-    width: 30%;
+    width: 100%;
   }
   .icons {
     display: flex;
@@ -68,10 +74,11 @@
     justify-content: center;
   }
   .container {
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-items: center; 
+    flex-direction: column;
     max-width: 1200px; 
     margin: 0 auto;
     padding: 20px;
@@ -82,14 +89,14 @@
     align-items: center;
     justify-content: center;
     width: 350px;
-    flex-shrink: 0; 
-    margin-right: 20px;
   }
   
   .aboutmetext {
-    text-align: start;
     display: flex;
+    max-width: 1200px;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     font-size: 1.3rem;
     gap: 30px;
   }
@@ -109,7 +116,7 @@
 @media screen and (max-width: 1200px){
     .aboutmetext {
       font-size: 1.2rem;
-      max-width: 80%;
+      max-width: 100%;
     }
 
     .contact {
@@ -119,7 +126,7 @@
 @media screen and (max-width: 1024px){
     .aboutmetext {
       font-size: 1.2rem;
-      max-width: 40%;
+      max-width: 100%;
     }
     .container {
       justify-content: center;
@@ -142,11 +149,11 @@
   @media screen and (max-width: 900px){
     .aboutmetext {
       font-size: 1.1rem;
-      max-width: 50%;
+      max-width: 100%;
     }
     .container {
-      justify-content: start;
-      align-items: start; 
+      justify-content: center;
+      align-items: center; 
     }
     .container img {
       width: 100%;
@@ -163,54 +170,38 @@
     
   }
 
-  @media screen and (max-width: 749px){
-    .aboutmetext {
-      font-size: 1rem;
-      max-width: 30%;
-      
-    }
-    .container {
-      justify-content: start;
-      align-items: start; 
-    }
-    .contact {
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      align-items: center;
-    }
-    .links
-    {
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      align-items: center;
-    }
+@media screen and (max-width: 749px) {
+  .aboutmetext {
+    font-size: 1rem;
+    max-width: 100%;
   }
+  .container {
+    justify-content: center;
+    align-items: center;
+  }
+  .contact,
+  .links {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .icons {
+    flex-direction: row;
+  }
+}
 
-  @media screen and (max-width: 500px){
-    .aboutmetext {
-      font-size: 0.8rem;
-      max-width: 35%;
-    }
-    .contact {
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      align-items: center;
-    }
-    .links
-    {
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      align-items: center;
-    }
-    .container img {
-      width: 90%;
-    }
-    
+@media screen and (max-width: 500px) {
+  .aboutmetext {
+    font-size: 0.8rem;
+    max-width: 100%;
   }
+  .container img {
+    margin-right: -5%;
+    width: 45%;
+    max-width: 100%; /* Ensures image does not overflow container */
+  }
+}
 
   </style>
   
